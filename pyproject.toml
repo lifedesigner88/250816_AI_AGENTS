@@ -13,3 +13,8 @@ dependencies = [
 dev = [
     "ipykernel>=6.30.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "A01_News_Reader_Agent",
+]
