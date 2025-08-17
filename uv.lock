@@ -8,9 +8,33 @@ resolution-markers = [
 
 [manifest]
 members = [
+    "a00-understanding-ai",
     "a01-news-reader-agent",
     "my-first-agent",
 ]
+
+[[package]]
+name = "a00-understanding-ai"
+version = "0.1.0"
+source = { virtual = "A00_Understanding_AI" }
+dependencies = [
+    { name = "notebook" },
+    { name = "openai" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "notebook", specifier = ">=7.4.5" },
+    { name = "openai", specifier = ">=1.98.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=6.30.0" }]
 
 [[package]]
 name = "a01-news-reader-agent"
@@ -1565,22 +1589,10 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "notebook" },
-    { name = "openai" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ipykernel" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "notebook", specifier = ">=7.4.5" },
-    { name = "openai", specifier = ">=1.98.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ipykernel", specifier = ">=6.30.0" }]
+requires-dist = [{ name = "notebook", specifier = ">=7.4.5" }]
 
 [[package]]
 name = "nbclient"

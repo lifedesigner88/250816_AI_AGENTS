@@ -1,16 +1,15 @@
 [project]
-name = "my-first-agent"
+name = "a00-understanding-ai"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "notebook>=7.4.5",
+    "openai>=1.98.0",
 ]
 
-
-[tool.uv.workspace]
-members = [
-    "A01_News_Reader_Agent",
-    "A00_Understanding_AI",
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.0",
 ]
