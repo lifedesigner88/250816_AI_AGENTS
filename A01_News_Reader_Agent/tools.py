@@ -1,16 +1,11 @@
-from crewai.tools import tool
 
 
-@tool
-def count_letters(sentence: str):
+from crewai_tools import SerperDevTool
+
+search_tool = SerperDevTool()
+
+def scrape_tool(url:str):
     """
-    This function is to count the amount of letters in a sentence.
-    The input is a `sentence` string.
-    The output is a number.
+    Return the content of a website.
+    Input should be a 'url' string.
     """
-    print("tool called with input:", sentence)
-    return len(sentence)
-
-
-
-
