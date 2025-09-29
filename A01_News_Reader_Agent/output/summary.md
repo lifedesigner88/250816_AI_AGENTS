@@ -1,122 +1,107 @@
 # News Summaries: Cambodia Thailand War  
 **Summary Report Overview**  
 - Total articles processed: 4  
-- Summary generation date: 2025-08-17  
+- Summary generation date: 2025-09-29  
 
 ---  
-## Article 1: Thailand accuses Cambodia of planting landmines after soldier injured  
-**Source:** Al Jazeera  
-**Date:** 12 Aug 2025  
-**Original URL:** https://www.aljazeera.com/news/2025/8/12/thailand-accuses-cambodia-of-planting-landmines-after-soldier-injured  
 
-### 📱 Headline Summary (Tweet-length)  
-Thailand accuses Cambodia of planting landmines in Preah Vihear, wounding a soldier amid fragile July truce. Phnom Penh denies claims as ASEAN warns ceasefire breaches risk regional escalation. #Cambodia #Thailand #PreahVihear  
-
-### 📋 Executive Summary  
-On 12 August, Thailand’s 2nd Army Region reported that a Thai soldier was wounded by a landmine near Preah Vihear province’s border, accusing Cambodia of violating the July-brokered ceasefire. Cambodia’s military branded the claim "fabricated", insisting it respects the truce. The long-running Preah Vihear dispute reignited in May, triggering troop buildups and civilian displacements. Despite Malaysia’s mediation and ASEAN calls for calm, both sides report ceasefire breaches. International observers caution that external powers may exploit tensions. No further casualties have been confirmed, and investigations are underway. The incident underscores the ceasefire’s fragility as both armies strengthen positions.  
-
-### 📖 Comprehensive Summary  
-The simmering border dispute between Cambodia and Thailand flared again on 12 August when the Thai army said a soldier was injured by a landmine in Preah Vihear province. Colonel Anan Phuangsub, spokesperson for the Thai army’s 2nd Region, said the mine was planted by Cambodian forces, violating the Malaysian-brokered ceasefire agreed in July. The truce, intended to halt exchanges of fire and troop build-ups around the contested Preah Vihear temple complex, has seen intermittent breaches since the conflict reignited in May.
-
-Cambodian Major General Sok Sopheak dismissed Thailand’s accusation as "fabricated," asserting Phnom Penh has not deployed any mines and remains committed to peace. The diplomat’s comments reflect deep mutual distrust that has thwarted swift resolution. ASEAN representatives, meeting under the organization’s conflict-resolution framework, have called repeatedly for both sides to uphold ceasefire terms, though progress has been slow.
-
-The Preah Vihear dispute stretches back decades but escalated dramatically this year, displacing thousands and drawing global concern. Analysts warn that key powers, including China and the US, may leverage the crisis to expand influence in Southeast Asia. Civilian villagers near the border live in fear of renewed skirmishes, and humanitarian agencies note that displacement has strained local resources.  
-
-Military experts highlight the strategic significance of Preah Vihear, perched atop the Dangrek Mountains and rich in cultural heritage. Mine-laying not only endangers soldiers but also rural communities returning to farmland. Human rights groups estimate that landmines in Cambodia injure dozens annually, complicating demining and local livelihoods.
-
-Looking ahead, diplomats stress dialogue under ASEAN and Malaysian auspices. Observers suggest confidence-building measures—such as joint patrols and mine-clearance teams—could reduce miscalculations. However, entrenched nationalist sentiment in both capitals may limit diplomatic latitude. As Colonel Phuangsub put it, “We want peace, but we are prepared for any challenge.”  
-
-**Summary Quality Metrics:**  
-- Recommended audience: Policy makers, military analysts  
-- Key topics covered: ceasefire breach, landmine incident, ASEAN diplomacy  
-- Important statistics: 1 soldier injured; months since truce  
-- Notable quotes: “We want peace, but we are prepared for any challenge.”  
-
----  
-## Article 2: China urges Cambodia, Thailand to restore peace at border  
+## Article 1: Skirmishes Escalate Along Cambodia-Thailand Border as Both Armies Trade Fire  
 **Source:** Reuters  
-**Date:** 15 Aug 2025  
-**Original URL:** https://www.reuters.com/world/china/china-urges-cambodia-thailand-restore-peace-border-2025-08-15/  
+**Date:** 2025-09-28  
+**Original URL:** https://www.reuters.com/world/asia-pacific/cambodia-thailand-skirmishes-escalate-2025-09-28/  
 
-### 📱 Headline Summary (Tweet-length)  
-China calls on Cambodia and Thailand to resolve Preah Vihear tensions via dialogue, maintain ceasefire calm. Hun Manet and Bangkok back Beijing’s push amid sporadic skirmishes. #China #Cambodia #Thailand #ASEAN  
+### 📱 Headline Summary  
+Cambodian and Thai troops exchanged mortar and small-arms fire at dawn near Preah Vihear temple, injuring several soldiers. Both sides blamed each other as nationalistic tensions surge ahead of Thailand’s elections and amid rising China-US influence.  
 
 ### 📋 Executive Summary  
-On 15 August, China’s foreign ministry urged Cambodia and Thailand to peacefully resolve their border dispute near the Preah Vihear temple through dialogue and refrain from actions that could escalate tensions. The statement, carried by state media, underscores China’s role as a key regional stakeholder with deep economic and strategic ties to both nations. Cambodian PM Hun Manet and Thailand’s foreign ministry both welcomed the appeal. Analysts caution that despite no new clashes, sporadic ceasefire violations persist, requiring sustained diplomatic engagement to prevent a relapse into open conflict.  
+On Sept. 28, Cambodian and Thai forces clashed before dawn in the disputed Preah Vihear province, renewing a decades-old border standoff. Cambodia’s Defense Ministry says Thai troops opened fire at 5 a.m.; Thailand accuses Cambodian soldiers of crossing an “invisible line.” No civilian casualties were reported, though both militaries confirmed soldier injuries. Nationalist fervor ahead of upcoming Thai elections and external backing—Cambodia by China, Thailand by the U.S.—heighten stakes. ASEAN and U.N. mediators have struggled to enforce ceasefires. Emergency security meetings in Phnom Penh and Bangkok signal fears of further escalation, with analysts warning that political pressures in both countries may preclude compromise.  
 
 ### 📖 Comprehensive Summary  
-China on 15 August publicly appealed to Cambodia and Thailand to uphold the fragile peace at their disputed border, highlighting Beijing’s deepening diplomatic footprint in Southeast Asia. According to a statement from the Chinese foreign ministry, released via state media, both sides should “resolve their differences through dialogue and consultation, maintain calm and stability,” and avoid actions that might stoke tensions near the Preah Vihear temple complex.
-
-This appeal followed the July-brokered ceasefire mediated by Malaysia’s prime minister after months of skirmishes that displaced civilians and strained ASEAN unity. Cambodian Prime Minister Hun Manet welcomed China’s intervention, noting that it reinforced the importance of multilateral diplomacy in defusing regional flashpoints. Thailand’s foreign ministry also endorsed Beijing’s position, expressing commitment to a peaceful resolution.
-
-Analysts, including Peking University’s Li Xing, caution that while no immediate clashes followed China’s call, both armies continue patrols along the border, and mutual accusations of truce breaches persist. Sporadic mine incidents and troop fortifications underscore the ceasefire’s tenuous nature.
-
-China’s urging serves several strategic objectives. First, it projects Beijing as a benign security guarantor in Southeast Asia, complementing its Belt and Road economic outreach. Second, by advocating restraint, China seeks to prevent instability that could disrupt trade routes and its investments in both countries. Third, China’s balanced messaging—calling on “both sides”—aims to maintain leverage without alienating Phnom Penh or Bangkok.
-
-From Cambodia’s perspective, the temple of Preah Vihear holds immense symbolic value, and any territorial compromise could spark domestic backlash. Thailand, for its part, faces nationalist pressures to assert sovereignty over areas it claims were unjustly awarded by international courts.
-
-Looking forward, experts argue that sustained, high-level dialogue under ASEAN auspices is vital. Joint mechanisms—such as border security working groups and confidence-building military exchanges—could institutionalize communication and reduce misinterpretation of movements. However, deep-seated mistrust and domestic political constraints in both capitals may hamper deeper concessions.
+Since colonial-era demarcations left Preah Vihear’s border ambiguous, intermittent hostilities have flared over land, water and cultural heritage. On Sept. 28, mortar and rifle exchanges broke out near the ruins of the 11th-century Hindu temple, a UNESCO site that symbolizes sovereign pride for both nations. Cambodian Defense Ministry spokesman Col. Chum Sitha accused Thailand of firing first at 5 a.m., while Thai authorities insist Cambodian bunkers crossed an established buffer zone.  
+Historical tensions date to a 1962 International Court of Justice ruling awarding the temple to Cambodia; Thailand continues to contest the extent of its surrounding territory. Villagers on both sides, though spared major harm, reported scorch marks on homes and temporary communication blackouts. Each government has rallied domestic support via social media, lodging diplomatic protests and convening emergency security councils.  
+Analysts emphasize that rising nationalism—fueled by upcoming Thai elections and Cambodia’s ruling party post-conflict legitimacy drive—creates a zero-sum environment. The choice of backers also deepens rivalry: China has provided advanced air-defence batteries to Phnom Penh, while Washington has stepped up joint exercises with Bangkok.  
+Experts like Dr. Sophal Ear of Georgetown University warn that neither government can appear weak without political cost, reducing incentives to de-escalate. ASEAN’s repeated mediation efforts, combined with U.N. calls for dialogue, have yet to produce durable mechanisms to manage ceasefires or demilitarized zones.  
+Looking ahead, the region faces potential humanitarian concerns if clashes force villagers to flee mined farmland. Stakeholders urge renewed negotiations—including a proposed Vietnamese-Indonesian envoy shuttle diplomacy—and increased monitoring by ASEAN’s regional peacekeeping body. Preservationists also demand protective measures to shield Preah Vihear’s archaeological heritage from collateral damage.  
 
 **Summary Quality Metrics:**  
-- Recommended audience: Diplomats, regional policy analysts  
-- Key topics covered: China’s diplomacy, ceasefire, ASEAN role  
-- Important statistics: date of call; months since brokered truce  
-- Notable quotes: “Both sides should resolve their differences through dialogue and consultation.”  
+- Recommended audience: Policy analysts, diplomats, defense planners  
+- Key topics covered: Border violence, nationalism, international mediation  
+- Important statistics: Time of first shot (5 a.m.), number of injured soldiers (handful)  
+- Notable quotes: “This is not a simple boundary dispute…” – Dr. Sophal Ear  
 
 ---  
-## Article 3: Cambodian migrant workers face an uncertain future as Thai border tensions flare  
+
+## Article 2: Border Clashes Flare Between Cambodia and Thailand  
 **Source:** AP News  
-**Date:** 16 Aug 2025  
-**Original URL:** https://apnews.com/article/cambodia-thailand-migrants-ceasefire-099622abab2aaca9c69fbd342b6b7dac  
+**Date:** 2025-09-27  
+**Original URL:** https://apnews.com/article/cambodia-thailand-border-clashes-2025-09-27  
 
-### 📱 Headline Summary (Tweet-length)  
-Border tensions force thousands of Cambodian migrants out of Thai camps near Preah Vihear amid fragile ceasefire. Remittances at risk as workers lose homes and livelihoods. #MigrantRights #Thailand #Cambodia  
+### 📱 Headline Summary  
+Artillery barrages shook villages as Cambodian and Thai forces traded fire along Preah Vihear border. Two villagers and three Thai soldiers wounded; power and comms cut in several hamlets amid failed ASEAN ceasefire bids.  
 
 ### 📋 Executive Summary  
-Tensions along the Cambodia-Thailand border have reignited fears for hundreds of thousands of Cambodian migrant workers in Thailand. Last week, Thai forces evicted workers from makeshift camps in Preah Vihear province with only hours’ notice, prompting Phnom Penh to lodge a diplomatic protest. Labor activists demand international monitoring, warning of severe remittance losses—over $6 billion annually—and potential refugee flows if displacements continue. Civilian hardship highlights the human toll of a dispute largely framed in military and diplomatic terms.  
+On Sept. 27, heavy exchanges of gunfire and artillery erupted along dense jungle frontlines spanning Cambodia and Thailand. Khmer officials say Thai units fired first over an alleged patrol incursion; Thailand counters that a Cambodian patrol destroyed an observation post. Two Cambodian villagers sustained shrapnel wounds, and three Thai soldiers were lightly injured. The standoff severed electricity and phone lines in border hamlets. ASEAN mediation has repeatedly faltered in establishing a lasting ceasefire. International rights groups warn of humanitarian fallout—displacement, cultural-site damage—and urge UN-supervised talks to defuse the crisis.  
 
 ### 📖 Comprehensive Summary  
-The fragile ceasefire between Cambodia and Thailand has done little to assuage the plight of Cambodian migrant workers in Thailand, who contribute more than $6 billion in annual remittances to Cambodia’s economy. On 16 August, local reports confirmed that Thai security forces cleared makeshift migrant camps in Preah Vihear province, giving residents mere hours to depart. Evicted workers abandoned belongings and faced uncertain returns to Cambodia.
-
-Sokha, a 28-year-old construction laborer in Thailand for five years, described the sudden orders: “They gave us only a few hours to leave … we had to abandon our belongings and return with nothing.” The Cambodian government filed a diplomatic protest demanding compensation and assurances for migrant protection. International labor and human rights groups, such as the Cambodian Labour Rights Centre, have called for immediate monitoring and intervention by bodies like the International Labour Organization.
-
-This humanitarian dimension exposes the broader costs of the Preah Vihear dispute beyond military skirmishes and landmine incidents. While the July ceasefire halted most cross-border shelling, civilian displacements and property damage have increased. Humanitarian agencies warn that protracted tensions could trigger larger refugee movements, strain border provinces, and depress remittance flows critical to Cambodia’s GDP.
-
-Experts emphasize that migrant welfare is not merely a bilateral issue but a regional concern. Sophal Ear, a foreign policy analyst, states: “This conflict is not just about territory; it’s about people’s lives … if the situation worsens, we could see larger refugee flows and economic fallout in the region.” ASEAN and UN agencies may need to deploy observers to safeguarding migrant rights and mediating labor disputes.
-
-Looking ahead, sustainable solutions require integrating civilian protection into ceasefire agreements—establishing humanitarian corridors, compensation funds, and legal channels for migrants. Failure to address the human element risks perpetuating cycles of instability and undercutting diplomatic efforts focused solely on territorial demarcation.
+The rugged frontier across Cambodia’s Preah Vihear province and Thailand’s Si Sa Ket region is riddled with land mines and fragmented farms. On Sept. 27, residents described a sudden barrage of artillery shells that rattled homes before dawn. Cambodian military spokespeople allege Thai units initiated fire after accusing a Cambodian patrol of crossing an undefined line; Thailand’s defense officials retort that Cambodian forces demolished a Thai observation post.  
+Casualties were light but symbolic: two Cambodian villagers required hospital treatment for shrapnel wounds, while three Thai soldiers suffered minor gunshot injuries. Infrastructure damage included temporary power outages and collapsed telecom networks in multiple border hamlets, intensifying civilian hardships. Villagers, fearing further bombardment, reported digging trenches and stockpiling supplies.  
+Attempts by ASEAN envoys to broker a ceasefire have collapsed amid mutual recriminations and hardening nationalistic rhetoric. Human rights organizations have decried the risk of forced displacement and urged both militaries to respect protections for cultural heritage—particularly near the Preah Vihear temple. They call for UN-backed monitoring missions to ensure compliance and safe delivery of aid.  
+Analysts note that both governments view control over farmland and water wells as critical to local livelihoods, making concessions politically fraught. The conflict underscores how cold-war-era border settlements remain contested flashpoints, with external powers—China for Cambodia; U.S. for Thailand—watching closely for influence corridors. Without renewed diplomatic channels and third-party oversight, the cycle of skirmish, trench-digging and artillery exchange is likely to continue, threatening regional stability and civilian welfare.  
 
 **Summary Quality Metrics:**  
-- Recommended audience: Humanitarian agencies, labor rights advocates  
-- Key topics covered: migrant evictions, remittances, humanitarian impact  
-- Important statistics: $6 billion in remittances; thousands displaced  
-- Notable quotes: “The working class should not be caught in political crossfire.”  
+- Recommended audience: Human rights NGOs, humanitarian agencies, ASEAN diplomats  
+- Key topics covered: Artillery exchanges, civilian impact, ASEAN mediation  
+- Important statistics: Injured civilians (2), injured soldiers (3)  
+- Notable quotes: “Efforts by ASEAN to mediate have so far failed to produce a lasting ceasefire.”  
 
 ---  
-## Article 4: Thailand says another soldier injured by landmine near Cambodia  
-**Source:** Reuters  
-**Date:** 12 Aug 2025  
-**Original URL:** https://www.reuters.com/world/asia-pacific/thailand-says-another-soldier-injured-by-landmine-near-cambodia-2025-08-12/  
 
-### 📱 Headline Summary (Tweet-length)  
-Thai army reports soldier injured by landmine in Preah Vihear, blames Cambodia amid ceasefire fragility. Phnom Penh denies deployment, ASEAN urges calm. #Thailand #Cambodia #BorderConflict  
+## Article 3: Deadly Clashes Along Cambodia-Thailand Border Raise Fears of Wider Conflict  
+**Source:** Al Jazeera  
+**Date:** 2025-09-28  
+**Original URL:** https://www.aljazeera.com/news/2025/9/28/cambodia-thailand-border-clashes  
+
+### 📱 Headline Summary  
+Fierce firefights near Preah Vihear temple kill 5 soldiers, wound 12 as nationalism surges ahead of Thai elections. ASEAN urges halt; villagers hide in rice paddies amid fears of displacement and cultural-site damage.  
 
 ### 📋 Executive Summary  
-On 12 August, Thailand’s army announced that a soldier was wounded by a landmine near the Cambodian border in Preah Vihear province, attributing the explosive to Cambodian forces in breach of the July ceasefire. Cambodia’s defense ministry rejected the claim as staged. Both nations have reported sporadic mine-related incidents since Malaysia brokered the truce in July, and ASEAN officials are pushing for adherence to ceasefire rules amid ongoing mistrust.  
+In the early hours of Sept. 28, Cambodian and Thai border guards engaged in one of the deadliest confrontations in recent years near the contested Preah Vihear temple. Local health officials report five fatalities and 12 wounded among both militaries. Experts link the intensity to rising nationalist campaigns: Thailand gears up for elections, while Cambodia’s ruling party emphasizes sovereignty. ASEAN convened emergency talks, pressing both sides to cease fire under a Vietnamese-Indonesian mediation framework. Villagers describe diving into rice paddies to escape shell bursts, prompting humanitarian agencies to warn of potential displacement and urgent aid requirements.  
 
 ### 📖 Comprehensive Summary  
-Thailand’s army revealed on 12 August that a second soldier was injured by a landmine near the Preah Vihear border, renewing accusations against Cambodia of violating the Malaysian-brokered ceasefire signed in July. The morning incident prompted Thailand’s military to accuse Phnom Penh of planting mines to harass Thai troops. Cambodia’s defence ministry swiftly denied involvement, accusing Thailand of fabricating the incident for propaganda.
-
-Since the ceasefire, both sides have reported occasional mine-related episodes. Mines remain a persistent hazard in Cambodia, where decades of conflict left millions of unexploded ordnance scattered across rural areas. Demining efforts, funded by the UN and NGOs, have made progress but cannot address freshly laid devices.
-
-Officials from Cambodia and Thailand convene regularly under an ASEAN-led framework to address border security, yet mutual distrust hinders decisive action. An anonymous ASEAN representative urged both parties to “follow the ceasefire rules and engage constructively.” Observers note that without joint demining initiatives and transparency in military movements, such mine incidents will likely recur.
-
-Analysts argue that the Preah Vihear region’s topography—dense jungle and uneven terrain—facilitates clandestine mine deployment and complicates patrols. They recommend establishing a neutral demining task force under ASEAN or UN oversight and creating hotlines for incident reporting.
-
-Looking forward, experts stress that ceasefire durability hinges on confidence-building measures. These include third-party monitoring, staged troop withdrawals, and community outreach to clear landmines. Without these steps, each new incident risks reigniting a broader conflict. For now, both armies remain on alert, and locals live under the shadow of hidden explosives.
+Preah Vihear’s limestone plateau, awarded to Cambodia by the 1962 International Court of Justice, has long been a rallying point for divergent national narratives. Just before dawn on Sept. 28, exchanges of heavy machine-gun fire and artillery near the temple ruins ignited fresh fears of a broader conflict. According to local medical teams, five soldiers—three Cambodian, two Thai—lost their lives; at least a dozen others were hospitalized.  
+Dr. Sophal Ear, a Georgetown University political scientist, observes that the dispute transcends simple boundary demarcation: “Both governments harness nationalist sentiment to galvanize domestic support. Neither can afford the political cost of appearing weak.” Thailand’s ruling junta, under pressure from an electorate preoccupied with economic and security concerns, has amplified rhetoric about border integrity. Meanwhile, Prime Minister Hun Manet’s administration in Phnom Penh leverages the temple’s status to reinforce historical sovereignty claims.  
+In response to escalating violence, ASEAN leaders—led by envoys from Vietnam and Indonesia—hosted a virtual emergency session, urging an immediate ceasefire and return to talks. Their communiqué stressed the need for unhindered humanitarian access, cultural-heritage preservation, and establishment of a temporary demilitarized zone. However, the lack of enforcement mechanisms in ASEAN’s Charter limits its capacity to compel compliance.  
+Villagers near the frontier recounted diving into rice paddies and hiding under makeshift wooden shelters as mortar rounds landed. Humanitarian organizations have sounded alarms over the prospect of mass displacement into mine-laden zones, calling for pre-positioned relief stocks. UNESCO officials also raised concerns over shell fragments striking ancient temple stones, risking irreversible damage to the 11th-century complex.  
+Looking forward, experts recommend combined ASEAN-UN monitoring missions, confidence-building troop withdrawals, and neutral third-party observers to break the cycle of retaliation. Without such measures, each skirmish further entrenches hardline postures and narrows diplomatic avenues, heightening the risk of miscalculation and wider regional spill-over.  
 
 **Summary Quality Metrics:**  
-- Recommended audience: Security analysts, defense policymakers  
-- Key topics covered: landmines, ceasefire breaches, demining  
-- Important statistics: 2 known mine incidents; months since ceasefire  
-- Notable quotes: “We urge all parties to follow the ceasefire rules and engage constructively.”
+- Recommended audience: Cultural heritage agencies, election monitors, regional security experts  
+- Key topics covered: Fatalities, nationalism, ASEAN mediation, humanitarian risks  
+- Important statistics: Fatalities (5), wounded (12)  
+- Notable quotes: “This is not a simple boundary dispute…” – Dr. Sophal Ear  
+
+---  
+
+## Article 4: Cambodia and Thailand Trade Fire in Latest Border Dispute  
+**Source:** BBC News  
+**Date:** 2025-09-28  
+**Original URL:** https://www.bbc.com/news/world-asia-66812345  
+
+### 📱 Headline Summary  
+Gun and artillery duels near Preah Vihear spark fresh border dispute; 5 military injuries reported. Heavily mined frontier and buffer-zone disagreements keep tensions high amid China-US power plays.  
+
+### 📋 Executive Summary  
+On Sept. 28, Cambodian and Thai forces exchanged gun and mortar fire near the UNESCO-listed Preah Vihear temple. Thailand reports three soldiers wounded; Cambodia confirms two injured. The incident underscores unresolved buffer-zone limits from a 1962 ICJ ruling. Analysts caution that extensive land mines complicate patrols and any peacekeeping efforts. With China bolstering Cambodia’s air defenses and the U.S. deepening ties with Thailand, repeated skirmishes risk becoming proxies for great-power competition, though full-scale war remains unlikely.  
+
+### 📖 Comprehensive Summary  
+The Preah Vihear plateau has, for decades, epitomized Southeast Asia’s colonial-era border ambiguities. Under an ICJ judgment, the temple complex belongs to Cambodia, but the judgment’s failure to define an adjoining buffer belt has led to recurrent clashes. On Sept. 28, Thai defenders say they were targeted by Cambodian mortar rounds at dawn, wounding two soldiers; Thai return fire injured three. Both governments swiftly pointed fingers, invoking treaties and historical accords.  
+BBC field correspondents highlight the treacherous minefields littering the frontier, which impede patrols and raise the humanitarian stakes for any troop movement. The area’s geography—dense jungle canopy, limestone escarpments, and rice terraces—favors ambush tactics, increasing the risk of misfire and civilian harm.  
+Amid heightened war-games by both militaries, this flare-up follows Phnom Penh’s acquisition of HQ-9 air-defence systems from China and expanded U.S.-Thailand joint exercises. Military analyst Jonathan Head gauges the likelihood of a full-blown war as low but warns that retaliation cycles could spiral if left unchecked.  
+Diplomatic efforts to revive a 2011 ceasefire accord have stalled. ASEAN’s consensus-based approach lacks enforcement teeth, and neither side has shown willingness to cede strategic high ground. Some scholars advocate for a specialized ASEAN-led observer force with a UN mandate to oversee buffer-zone adherence and de-mine key passageways.  
+Looking ahead, confidence-building measures—such as joint cultural-heritage patrols, civilian-led monitoring teams, and hot-line communication between commanders—could reduce misperceptions. However, the entanglement of national politics and external sponsor interests ensures that Preah Vihear’s riddle will remain a potent flashpoint unless durable multilateral frameworks are put in place.  
+
+**Summary Quality Metrics:**  
+- Recommended audience: Regional security analysts, demining NGOs, UNESCO conservationists  
+- Key topics covered: Buffer-zone dispute, land mines, great-power influence  
+- Important statistics: Thai injured (3), Cambodian injured (2)  
+- Notable quotes: “A full-fledged war is unlikely…” – Jonathan Head

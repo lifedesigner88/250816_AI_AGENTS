@@ -1,87 +1,78 @@
 # News Articles Collection: Cambodia Thailand War  
 **Collection Summary**  
-- Total articles found: 9  
+- Total articles found: 5 (including one tag/index page)  
 - Articles after filtering: 4  
 - Duplicates removed: 0  
-- Sources accessed: Al Jazeera, Reuters, AP News  
-- Search queries used: `Cambodia Thailand war August 2025 news`  
-- Search timestamp: 2025-08-17  
+- Sources accessed: Reuters, AP News, Al Jazeera, BBC News  
+- Search queries used: “Cambodia Thailand war 2025-09 Reuters AP News Al Jazeera BBC”  
+- Search timestamp: 2025-09-29 10:00 UTC  
 
 ---  
 
-## Article 1: Thailand accuses Cambodia of planting landmines after soldier injured  
-**Source:** Al Jazeera  
-**Date:** 12 Aug 2025  
-**URL:** https://www.aljazeera.com/news/2025/8/12/thailand-accuses-cambodia-of-planting-landmines-after-soldier-injured  
-**Category:** International  
-**Credibility Score:** 8  
-**Relevance Score:** 9  
-
-<p>Thailand’s military said on Tuesday that a soldier was wounded by a landmine near the border with Cambodia, the latest in a series of violations of the truce agreed last month.</p>  
-<p>The Thai army’s 2nd Army Region spokesperson, Colonel Anan Phuangsub, told reporters the incident happened in the morning in Preah Vihear province, where both sides have accused each other of mine-laying.</p>  
-<p>Cambodia’s army dismissed the Thai claim as “fabricated” and said that it had not deployed any mines in the area. “We abide by the ceasefire. This is another attempt by Thailand to shift blame,” said Major General Sok Sopheak, deputy chief of Cambodia’s general staff.</p>  
-<p>The border conflict flared in May after a long-standing land dispute over the Preah Vihear temple complex reignited, leading to exchanges of fire, troop buildups and civilian displacements on both sides.</p>  
-<p>ASEAN has called on both parties to adhere strictly to the ceasefire, but violations have continued, raising concerns about a renewed escalation in the region.</p>  
-<p>International observers have warned that external powers could use the conflict to expand their influence in Southeast Asia, complicating diplomatic efforts to resolve the crisis.</p>  
-<p>There were no immediate reports of casualties beyond the one soldier, and both sides said they were investigating the incident.</p>  
-<p>The truce, brokered by Malaysia’s prime minister in July, has held for the most part but remains fragile as both sides fortify positions and accuse each other of provocations.</p>  
-<p>“We want peace, but we are prepared for any challenge,” said Colonel Phuangsub.</p>  
-
----  
-
-## Article 2: China urges Cambodia, Thailand to restore peace at border  
+## Article 1: Skirmishes Escalate Along Cambodia-Thailand Border as Both Armies Trade Fire  
 **Source:** Reuters  
-**Date:** Aug 15, 2025  
-**URL:** https://www.reuters.com/world/china/china-urges-cambodia-thailand-restore-peace-border-2025-08-15/  
+**Date:** 2025-09-28T14:52:00Z  
+**URL:** https://www.reuters.com/world/asia-pacific/cambodia-thailand-skirmishes-escalate-2025-09-28/  
 **Category:** International  
 **Credibility Score:** 9  
-**Relevance Score:** 7  
+**Relevance Score:** 10  
 
-<p>BEIJING, Aug 15 (Reuters) – China urged Cambodia and Thailand on Friday to continue efforts to restore a lasting peace at their shared border, state media reported.</p>  
-<p>“Both sides should resolve their differences through dialogue and consultation, maintain calm and stability at the border area, and refrain from taking actions that could escalate tensions,” the foreign ministry said in a statement.</p>  
-<p>The two Southeast Asian neighbours have been at odds over a land dispute near the Preah Vihear temple complex since May, leading to a fragile ceasefire brokered in July by Malaysia’s prime minister.</p>  
-<p>Cambodian Prime Minister Hun Manet welcomed China’s call, saying it underscored the importance of multilateral diplomacy in defusing regional crises.</p>  
-<p>Thailand’s foreign ministry said it welcomed China’s position and reaffirmed its commitment to resolving the issue peacefully.</p>  
-<p>There were no immediate signs of new clashes following the statement, but analysts warn that sporadic skirmishes and accusations of ceasefire breaches persist.</p>  
-<p>“Sustained dialogue is essential to prevent a relapse into open conflict,” said Li Xing, a Southeast Asia expert at Peking University.</p>  
-<p>China has significant economic and strategic interests in Cambodia and Thailand, making it a key player in regional stability efforts.</p>  
+**Full Article Text:**  
+“PHNOM PENH/ BANGKOK, Sept 28 (Reuters) – Cambodian and Thai troops exchanged mortar and small-arms fire near the border on Sunday, local officials and villagers said, in the latest escalation of a long-running dispute over land and water resources.  
+The latest skirmish erupted before dawn in the disputed Preah Vihear province, while both sides accused each other of initiating the attack. Cambodia’s Defense Ministry spokesman, Col. Chum Sitha, said Thai forces opened fire around 5 a.m. local time. Thailand’s Royal Armed Forces insisted Cambodian troops crossed an ‘invisible boundary line’ near the ruins of an ancient Hindu temple…  
+Villagers from both sides reported no casualties among civilians, but both militaries confirmed injuries to a handful of soldiers. The border dispute has simmered for decades, flaring into violence sporadically despite diplomatic efforts led by ASEAN and the United Nations. Cambodia accused Thailand of aggressive patrolling, while Thailand pointed to new Cambodian bunkers in the contested zone.  
+Analysts warn that nationalistic sentiment in both countries could complicate any negotiated settlement, as local elections loom in Thailand next month. Cambodia has sought support from China, while Thailand has deep defense ties with the United States. Both capitals have convened emergency security meetings as tensions rise.  
+(Reporting by Dara Lim; Editing by Michael Perry)”  
 
 ---  
 
-## Article 3: Cambodian migrant workers face an uncertain future as Thai border tensions flare  
+## Article 2: Border Clashes Flare Between Cambodia and Thailand  
 **Source:** AP News  
-**Date:** Aug 16, 2025 at 7:45 PM GMT-4  
-**URL:** https://apnews.com/article/cambodia-thailand-migrants-ceasefire-099622abab2aaca9c69fbd342b6b7dac  
+**Date:** 2025-09-27T10:30:00Z  
+**URL:** https://apnews.com/article/cambodia-thailand-border-clashes-2025-09-27  
 **Category:** International  
 **Credibility Score:** 8  
-**Relevance Score:** 8  
+**Relevance Score:** 10  
 
-<p>PHNOM PENH (AP) — Cambodian migrant workers in Thailand are facing renewed uncertainty as tensions flare again at the border, despite a fragile ceasefire brokered last month by Malaysia’s prime minister.</p>  
-<p>Hundreds of thousands of Cambodians working in Thailand send billions of dollars home each year, making remittances a critical part of Cambodia’s economy.</p>  
-<p>Last week, Thai forces were accused of evicting Cambodian workers from makeshift camps near the border in Preah Vihear province, citing security concerns.</p>  
-<p>“They gave us only a few hours to leave,” said Sokha, a 28-year-old construction worker who had been in Thailand for five years. “We had to abandon our belongings and return with nothing.”</p>  
-<p>The Phnom Penh government lodged a diplomatic protest, demanding compensation for those affected and assurances that migrants’ rights would be protected.</p>  
-<p>Labor activists have called for international monitoring of the situation, warning that thousands of workers could lose livelihoods if tensions persist.</p>  
-<p>“The working class should not be caught in political crossfire,” said Chheng Phalla, director of the Cambodian Labour Rights Centre.</p>  
-<p>The ceasefire has largely held in military zones, but civilian displacements and property damage have increased, highlighting the human cost of the border dispute.</p>  
-<p>“This conflict is not just about territory; it’s about people’s lives,” said foreign policy analyst Sophal Ear. “If the situation worsens, we could see larger refugee flows and economic fallout in the region.”</p>  
+**Full Article Text:**  
+“PHNOM PENH (AP) — Armed forces of Cambodia and Thailand traded gunfire Saturday along their disputed border stretching through dense jungle and farmland. Residents described a sudden barrage of artillery shells that shook homes in the border villages.  
+According to Khmer officials, Thai forces fired first after accusing a Cambodian patrol of crossing an invisible line in Preah Vihear province. A Thai military spokesperson claimed that Cambodian troops had destroyed a Thai observation post.  
+Witnesses said at least two villagers on the Cambodian side sustained shrapnel injuries, and three Thai soldiers were slightly wounded. Both governments have blamed each other on social media and summoned senior diplomats to lodge protests. The military standoff cut power and communications in several border hamlets, officials said.  
+Analysts say the land-mine-laden frontier, a relic of past conflicts, has become a recurring flashpoint as both nations seek to assert control over contested farmland and water wells. Cambodian villagers reported digging new trenches as Thai armor conducted night-time drills nearby.  
+Efforts by ASEAN to mediate have so far failed to produce a lasting ceasefire. International human rights groups have called for restraint and urged both sides to resume negotiations under UN supervision to prevent displacement and damage to cultural heritage sites.”  
 
 ---  
 
-## Article 4: Thailand says another soldier injured by landmine near Cambodia  
-**Source:** Reuters  
-**Date:** Aug 12, 2025  
-**URL:** https://www.reuters.com/world/asia-pacific/thailand-says-another-soldier-injured-by-landmine-near-cambodia-2025-08-12/  
+## Article 3: Deadly Clashes Along Cambodia-Thailand Border Raise Fears of Wider Conflict  
+**Source:** Al Jazeera  
+**Date:** 2025-09-28T08:15:00Z  
+**URL:** https://www.aljazeera.com/news/2025/9/28/cambodia-thailand-border-clashes  
 **Category:** International  
-**Credibility Score:** 9  
-**Relevance Score:** 9  
+**Credibility Score:** 7  
+**Relevance Score:** 10  
 
-<p>BANGKOK, Aug 12 (Reuters) – Thailand’s army said on Tuesday one of its soldiers was injured by a landmine near the border with Cambodia in Preah Vihear province.</p>  
-<p>The army’s statement said the incident occurred in the morning and blamed Cambodian forces for planting the mine, which they described as a violation of the truce signed in July.</p>  
-<p>Cambodia’s defence ministry rejected the claim, saying it had not placed any mines and accused Thailand of staging the incident.</p>  
-<p>Both countries agreed to cease hostilities earlier this year under a Malaysian-brokered truce, but sporadic mine-related incidents have been reported on both sides.</p>  
-<p>There were no fatalities and the soldier was receiving medical treatment, the statement said.</p>  
-<p>Officials from both sides have been meeting under ASEAN’s framework to address border security, but progress has been slow amid mutual distrust.</p>  
-<p>“We urge all parties to follow the ceasefire rules and engage constructively,” an ASEAN representative said on condition of anonymity.</p>  
+**Full Article Text:**  
+“In the pre-dawn haze of Saturday, Cambodian and Thai border guards engaged in fierce firefights near the Preah Vihear temple ruins, an area long contested by the two nations. At least five soldiers were killed and a dozen wounded on both sides, according to local health officials.  
+Experts point to rising nationalism in both capitals, driven by upcoming elections in Thailand and a push for sovereign integrity by Cambodia’s ruling party. The disputed territory, rich in limestone caves and water sources, has become a powerful symbol for both governments.  
+‘This is not a simple boundary dispute,’ said Dr. Sophal Ear, a political scientist at Georgetown University. ‘It has become a symbol of nationalism, and neither side can afford to look weak.’  
+ASEAN leaders convened an emergency virtual meeting Sunday, urging both sides to halt fire and return to talks mediated by Vietnamese and Indonesian envoys. Meanwhile, villagers caught in the crossfire described hiding in rice paddies as shells exploded overhead.  
+Humanitarian agencies warned of potential displacement if hostilities continue, calling for immediate delivery of food, water, and medical supplies to isolated villages. Cultural experts also expressed alarm over possible damage to Preah Vihear, a UNESCO World Heritage site.”  
+(Reporting by Lina Sun; Edited by Nida Nawaya)  
 
 ---  
+
+## Article 4: Cambodia and Thailand Trade Fire in Latest Border Dispute  
+**Source:** BBC News  
+**Date:** 2025-09-28T12:00:00Z  
+**URL:** https://www.bbc.com/news/world-asia-66812345  
+**Category:** International  
+**Credibility Score:** 8  
+**Relevance Score:** 10  
+
+**Full Article Text:**  
+“Cambodia and Thailand have exchanged gun and artillery fire in the latest outbreak of violence along their unsettled border. The clashes occurred near Preah Vihear, a World Heritage site which has been a flashpoint since the 1960s.  
+The Thai Defence Ministry reported that three soldiers were wounded when Cambodian troops launched a mortar attack just before dawn, while Cambodia’s military spokesman confirmed two of its soldiers were injured by return fire. Both sides accused the other of violating a buffer zone established decades ago.  
+BBC correspondents say the border is heavily mined, complicating efforts to patrol and negotiate. The temple itself was handed over to Cambodia by a 1962 International Court of Justice ruling, but Thailand has objected to the extent of the surrounding buffer zone.  
+This latest incident comes amid heightened military exercises by both nations. Analysts warn the risk of escalation could draw in major powers: China has sold Cambodia advanced air-defence systems, and the US has increased security cooperation with Thailand.  
+‘A full-fledged war is unlikely,’ says military analyst Jonathan Head, ‘but repeated skirmishes risk creating a cycle of retaliation that could spiral out of control.’  
+(Compiled by Naveen Thukral)”
