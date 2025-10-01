@@ -32,6 +32,13 @@ class NewsReaderAgent:
             config=self.agents_config["curator_agent"],
         )
 
+    @agent
+    def translator_agent(self):
+        return Agent(
+            config=self.agents_config["translator_agent"]
+        )
+
+
     @task
     def content_harvesting_task(self):
         return Task(
@@ -50,6 +57,12 @@ class NewsReaderAgent:
             config=self.tasks_config["final_report_assembly_task"],
         )
 
+    @task
+    def translate_task(self):
+        return Task(
+            config=self.tasks_config["translate_task"]
+        )
+
     @crew
     def crew(self):
         return Crew(
@@ -59,7 +72,7 @@ class NewsReaderAgent:
         )
 
 
-result = NewsReaderAgent().crew().kickoff(inputs={"topic": "Cambodia Thailand War."})
+result = NewsReaderAgent().crew().kickoff(inputs={"topic": "galaxy s vs iphone"})
 
 for task_output in result.tasks_output:
     print(task_output)
