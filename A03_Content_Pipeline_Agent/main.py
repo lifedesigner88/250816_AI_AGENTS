@@ -12,6 +12,11 @@ class ContentPipelineState(BaseModel):
     # Internal
     max_length: int = 0
 
+    # Content
+    blog_post: str = ""
+    tweet: str = ""
+    linkedin_post: str = ""
+
 
 class ContentPipelineFlow(Flow[ContentPipelineState]):
 
@@ -36,11 +41,11 @@ class ContentPipelineFlow(Flow[ContentPipelineState]):
         print("Researching....")
         return True
 
+
+
     @router(conduct_research)
-    def router(self):
-
+    def conduct_research_router(self):
         content_type = self.state.content_type
-
         if content_type == "blog":
             return "make_blog"
         elif content_type == "tweet":
@@ -48,18 +53,25 @@ class ContentPipelineFlow(Flow[ContentPipelineState]):
         else:
             return "make_linkedin_post"
 
-    @listen("make_blog")
+
+
+    @listen(or_("make_blog", "remake_blog"))
     def handle_make_blog(self):
+        # if blog post has been made, show the old one to the ai and ask it to improve, else
+        # just ask to create
         print("Making blog post ...")
 
-    @listen("make_tweet_post")
+    @listen(or_("make_tweet_post", "remake_tweet"))
     def handle_make_tweet_post(self):
+        # if tweet post has been made, show the old one to the ai and ask it to improve, else
+        # just ask to create
         print("Making tweet post ...")
 
-    @listen("make_linkedin_post")
+    @listen(or_("make_linkedin_post", "remake_linkedin_post"))
     def handle_make_linkedin_post(self):
+        # if post post has been made, show the old one to the ai and ask it to improve, else
+        # just ask to create
         print("Making linkedin post ...")
-
 
 
     @listen(handle_make_blog)
@@ -71,11 +83,26 @@ class ContentPipelineFlow(Flow[ContentPipelineState]):
         print("Checking Virality")
 
 
-    @listen(or_(check_virality, check_seo))
-    def finlize_content(self):
+    @router(or_(check_virality, check_seo))
+    def score_router(self):
+        content_type = self.state.content_type
+        score = self.state.score
+
+        if score >=8:
+            return "check_passed"
+
+        if content_type == "blog":
+            return "remake_blog"
+        elif content_type == "linkedin":
+            return "remake_linkedin_post"
+        else:
+            return "remake_tweet"
+
+
+    @listen("check_passed")
+    def finalize_content(self):
         print("Finalizing content")
 
+
 flow = ContentPipelineFlow()
-
-
 flow.plot()
