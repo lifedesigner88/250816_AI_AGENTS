@@ -4,8 +4,18 @@ dotenv.load_dotenv()
 
 from crewai import Crew, Agent, Task
 from crewai.project import CrewBase, task, agent, crew
+from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
 from models import JobList, RankedJobList, ChosenJob
 from tools import web_search_tool
+
+resume_knowledge_for_match = TextFileKnowledgeSource(
+    file_paths=["resume.txt"],
+    collection_name="resume_for_match"
+)
+resume_knowledge_for_research = TextFileKnowledgeSource(
+    file_paths=["resume.txt"],
+    collection_name="resume_for_research"
+)
 
 
 @CrewBase
@@ -20,19 +30,30 @@ class JobHunterCrew:
 
     @agent
     def job_matching_agent(self):
-        return Agent(config=self.agents_config["job_matching_agent"])
+        return Agent(
+            config=self.agents_config["job_matching_agent"],
+            knowledge_sources=[resume_knowledge_for_match]
+        )
 
     @agent
     def resume_optimization_agent(self):
-        return Agent(config=self.agents_config["resume_optimization_agent"])
+        return Agent(
+            config=self.agents_config["resume_optimization_agent"],
+        )
 
     @agent
     def company_research_agent(self):
-        return Agent(config=self.agents_config["company_research_agent"])
+        return Agent(
+            config=self.agents_config["company_research_agent"],
+            knowledge_sources=[resume_knowledge_for_research],
+            tools=[web_search_tool],
+        )
 
     @agent
     def interview_prep_agent(self):
-        return Agent(config=self.agents_config["interview_prep_agent"])
+        return Agent(
+            config=self.agents_config["interview_prep_agent"],
+        )
 
     @task
     def job_extraction_task(self):
@@ -93,4 +114,10 @@ class JobHunterCrew:
         )
 
 
-JobHunterCrew().crew().kickoff()
+JobHunterCrew().crew().kickoff(
+    inputs={
+        "level": "Senior",
+        "position": "React Developer",
+        "location": "Korea"
+    }
+)

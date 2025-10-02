@@ -16,6 +16,15 @@ def clean_text(text: str) -> str:
 
 @tool
 def web_search_tool(query: str):
+    """
+    Web search tool,
+    Args:
+        query:str
+            The query to search the web for.
+
+    Returns:
+        A list of search results with the website content in Markdown format.
+    """
     cleaned_chunks = []
 
     results = firecrawl.search(
