@@ -11,6 +11,7 @@ members = [
     "a00-understanding-ai",
     "a01-news-reader-agent",
     "a02-job-hunter-agent",
+    "a03-content-pipeline-agent",
     "my-first-agent",
 ]
 
@@ -56,6 +57,23 @@ requires-dist = [
 name = "a02-job-hunter-agent"
 version = "0.1.0"
 source = { virtual = "A02_Job_Hunter_Agent" }
+dependencies = [
+    { name = "crewai", extra = ["tools"] },
+    { name = "firecrawl" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "crewai", extras = ["tools"], specifier = ">=0.152.0" },
+    { name = "firecrawl", specifier = ">=4.3.6" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
+]
+
+[[package]]
+name = "a03-content-pipeline-agent"
+version = "0.1.0"
+source = { virtual = "A03_Content_Pipeline_Agent" }
 dependencies = [
     { name = "crewai", extra = ["tools"] },
     { name = "firecrawl" },
