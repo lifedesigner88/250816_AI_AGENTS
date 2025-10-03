@@ -17,4 +17,5 @@ members = [
     "A00_Understanding_AI",
     "A02_Job_Hunter_Agent",
     "A03_Content_Pipeline_Agent",
+    "A04_Grok_Deep_Research_Agent",
 ]
