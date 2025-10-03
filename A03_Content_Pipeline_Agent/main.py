@@ -1,56 +1,17 @@
 from crewai.flow.flow import Flow, listen, start, router, and_, or_
 from crewai import Agent
 from crewai import LLM
-from pydantic import BaseModel
-
-from typing import List
+from models import BlogPost, Tweet, LinkedInPost, ContentPipelineState
 
 from tools import web_search_tool
-
-
-class BlogPost(BaseModel):
-    title: str
-    subtitle: str
-    sections: List[str]
-
-
-class Tweet(BaseModel):
-    content: str
-    hashtags: str
-
-
-class LinkedInPost(BaseModel):
-    hook: str
-    content: str
-    call_to_action: str
-
-
-class Score(BaseModel):
-    score: int = 0
-    reason: str = ""
-
-
-class ContentPipelineState(BaseModel):
-    # Inputs
-    content_type: str = ""
-    topic: str = ""
-
-    # Internal
-    max_length: int = 0
-    research: str = ""
-    score: Score | None = None
-
-    # Content
-    blog_post: BlogPost | None = None
-    tweet: str = ""
-    linkedin_post: str = ""
+from seo_crew import SeoCrew
+from virality_crew import ViralityCrew
 
 
 class ContentPipelineFlow(Flow[ContentPipelineState]):
 
     @start()
     def init_content_pipeline(self):
-
         if self.state.content_type not in ["tweet", "blog", "linkedin"]:
             raise ValueError("The content type is wrong.")
 
@@ -96,7 +57,7 @@ class ContentPipelineFlow(Flow[ContentPipelineState]):
         llm = LLM(model="openai/o4-mini", response_format=BlogPost)
 
         if blog_post is None:
-            self.state.blog_post = llm.call(
+            response = llm.call(
                 f"""
                 You are a science blogger.
                 Write a blog post on the topic: {self.state.topic}
@@ -117,7 +78,7 @@ class ContentPipelineFlow(Flow[ContentPipelineState]):
                 """
             )
         else:
-            self.state.blog_post = llm.call(
+            response = llm.call(
                 f"""
                 You previously wrote a blog post on the topic: {self.state.topic}.  
                 However, it has a low SEO score because of the following issue: {self.state.score.reason}.  
@@ -144,37 +105,137 @@ class ContentPipelineFlow(Flow[ContentPipelineState]):
                 5. At the end, include a short list of suggested SEO keywords.
                 """
             )
+        self.state.blog_post = BlogPost.model_validate_json(response)
 
     @listen(or_("make_tweet_post", "remake_tweet"))
     def handle_make_tweet_post(self):
-        # if tweet post has been made, show the old one to the ai and ask it to improve, else
-        # just ask to create
-        print("Making tweet post ...")
+        tweet = self.state.tweet
+        llm = LLM(model="openai/o4-mini", response_format=Tweet)
+
+        if tweet is None:
+            response = llm.call(
+                f"""
+                You are a best tweeter specialized in viral.
+                Write a tweet on the topic: {self.state.topic}
+
+                Use the following research as your source material:
+                <research>
+                ===================
+                {self.state.research}
+                ===================
+                </research>
+
+                Requirements:
+                1. Length: around 150 length
+                2. Tone: friendly and accessible, for a high school audience
+                """
+            )
+        else:
+            response = llm.call(
+                f"""
+                You previously wrote a tweet on the topic: {self.state.topic}.  
+                However, it has a low virality score because of the following reason: {self.state.score.reason}.  
+
+                Your task is to **revise and improve the tweet** to achieve a better viral score, while keeping it clear and engaging.
+
+                Here is the current tweet post:
+                <tweet>
+                {self.state.tweet.model_dump_json()}
+                </tweet>
+
+                Use the following research as supporting material:
+                <research>
+                ================
+                {self.state.research}
+                ================
+                </research>
+
+                Requirements:
+                1. Improve virality (e.g., Hook strength, Emotional resonance, Shareability factor).
+                2. Maintain readability for a general audience.
+                """
+            )
+
+        self.state.tweet = Tweet.model_validate_json(response)
 
     @listen(or_("make_linkedin_post", "remake_linkedin_post"))
     def handle_make_linkedin_post(self):
-        # if post post has been made, show the old one to the ai and ask it to improve, else
-        # just ask to create
-        print("Making linkedin post ...")
+        linkedin_post = self.state.linkedin_post
+        llm = LLM(model="openai/o4-mini", response_format=LinkedInPost)
+
+        if linkedin_post is None:
+            response = llm.call(
+                f"""
+                You are a best in linkedin postiong specialized in trusting content.
+                Write a linkedin_post on the topic: {self.state.topic}
+
+                Use the following research as your source material:
+
+                <research>
+                ===================
+                {self.state.research}
+                ===================
+                </research>
+
+                Requirements:
+                1. Length: around 150 length
+                2. Tone: friendly and accessible, for a high school audience
+                """
+            )
+        else:
+            response = llm.call(
+                f"""
+                You previously wrote a linkedin_post on the topic: {self.state.topic}.  
+                However, it has a low virality score because of the following reason: {self.state.score.reason}.  
+
+                Your task is to **revise and improve the linkedin_post** to achieve a better viral score, while keeping it clear and engaging.
+
+                Here is the current linkedin_post post:
+                <linkedin_post>
+                {self.state.linkedin_post.model_dump_json()}
+                </linkedin_post>
+
+                Use the following research as supporting material:
+                <research>
+                ================
+                {self.state.research}
+                ================
+                </research>
+
+                 Requirements:
+                 1. Improve virality (e.g., Hook strength, Emotional resonance, Shareability factor).
+                 2. Maintain readability for a general audience.
+                 """
+            )
+        self.state.linkedin_post = LinkedInPost.model_validate_json(response)
 
     @listen(handle_make_blog)
     def check_seo(self):
-        print(self.state.blog_post)
-        print("🚀===========================🚀")
-        print(self.state.research)
-        print("🔥===========================🔥")
-        print("Checking Blog SEO")
+        result = SeoCrew().crew().kickoff(
+            inputs={
+                "topic": self.state.topic,
+                "blog_post": self.state.blog_post.model_dump_json()
+            }
+        )
+        self.state.score = result.pydantic
 
     @listen(or_(handle_make_tweet_post, handle_make_linkedin_post))
     def check_virality(self):
-        print("Checking Virality")
+        result = ViralityCrew().crew().kickoff(
+            inputs={
+                "topic": self.state.topic,
+                "content_type": self.state.content_type,
+                "content": self.state.tweet.model_dump_json() if self.state.content_type == "tweet" else self.state.linkedin_post.model_dump_json()
+            }
+        )
+        self.state.score = result.pydantic
 
     @router(or_(check_virality, check_seo))
     def score_router(self):
         content_type = self.state.content_type
         score = self.state.score.score
 
-        if score >= 8:
+        if score >= 7:
             return "check_passed"
 
         if content_type == "blog":
@@ -186,11 +247,39 @@ class ContentPipelineFlow(Flow[ContentPipelineState]):
 
     @listen("check_passed")
     def finalize_content(self):
-        print("Finalizing content")
+        """Finalize the content"""
+        print("🎉 Finalizing content...")
+
+        if self.state.content_type == "blog":
+            print(f"📝 Blog Post: {self.state.blog_post}")
+            print(f"🔍 SEO Score: {self.state.score.score}/100")
+        elif self.state.content_type == "tweet":
+            print(f"🐦 Tweet: {self.state.tweet}")
+            print(f"🚀 Virality Score: {self.state.score.score}/100")
+        elif self.state.content_type == "linkedin":
+            print(f"💼 LinkedIn: {self.state.linkedin_post}")
+            print(f"🚀 Virality Score: {self.state.score.score}/100")
+
+        print("✅ Content ready for publication!")
+        return (
+            self.state.linkedin_post
+            if self.state.content_type == "linkedin"
+            else (
+                self.state.tweet
+                if self.state.content_type == "tweet"
+                else self.state.blog_post
+            )
+        )
 
 
 flow = ContentPipelineFlow()
 
+flow.kickoff(
+    inputs={
+        "content_type": "tweet",
+        "topic": "Chat GPT and K-culture"
+    }
+)
 flow.kickoff(
     inputs={
         "content_type": "blog",
@@ -198,4 +287,12 @@ flow.kickoff(
     }
 )
 
+flow.kickoff(
+    inputs={
+        "content_type": "linkedin",
+        "topic": "Chat GPT and K-culture"
+    }
+)
+
 # flow.plot()
+
