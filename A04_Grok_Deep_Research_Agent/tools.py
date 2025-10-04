@@ -27,7 +27,7 @@ def web_search_tool(query: str):
 
     results = firecrawl.search(
         query=query,
-        limit=5,
+        limit=2,
         scrape_options={"formats": ["markdown"]},
     )
 
@@ -40,3 +40,11 @@ def web_search_tool(query: str):
             })
 
     return cleaned_chunks
+
+
+def save_report_to_md(content: str) -> str:
+    """Save report content to report.md file."""
+    with open("report.md", "w", encoding="utf-8") as f:
+        f.write(content)
+    return "report.md"
+
