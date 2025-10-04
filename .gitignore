@@ -15,3 +15,5 @@ wheels/
 
 # ... existing code ...
 .env
+/A05_ChatGPT_Clone/ai-memory.db-shm
+/A05_ChatGPT_Clone/ai-memory.db-wal
