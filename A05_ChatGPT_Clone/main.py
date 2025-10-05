@@ -1,47 +1,48 @@
+import dotenv, asyncio
 import streamlit as st
-import time
+from agents import Agent, Runner, SQLiteSession
 
+dotenv.load_dotenv()
 
-st.header("Hello world!")
+if "agent" not in st.session_state:
+    st.session_state["agent"] = Agent(
+        name="Chat GPT Clone",
+        instructions="""
+        You are a helpful assistant.
+        """
+    )
+agent = st.session_state["agent"]
 
-st.button("Click me please!")
+if "session" not in st.session_state:
+    st.session_state["session"] = SQLiteSession(
+        "chat-history",
+        "cht-gpt-clone-memory.db"
+    )
 
-st.text_input(
-    "Write your API KEY",
-    max_chars=20,
-)
+session = st.session_state["session"]
 
-st.feedback("faces")
+async def run_agent(message):
+    stream = Runner.run_streamed(
+        agent,
+        message,
+        session=session,
+    )
+
+    async for event in stream.stream_events():
+        if event.type == "raw_response_event":
+            if event.data.type == "response.output_text.delta":
+                with st.chat_message("ai"):
+                    st.write(event.data.delta)
+
+prompt = st.chat_input("Write a message for your assistant")
+
+if prompt:
+    with st.chat_message("human"):
+        st.write(prompt)
+    asyncio.run(run_agent(prompt))
 
 with st.sidebar:
-    st.badge("Badge 1")
-
-
-tab1, tab2, tab3 = st.tabs(["Agent", "Chat", "Outpu"])
-
-with tab1:
-    st.header("Agent")
-with tab2:
-    st.header("Agent 2")
-with tab3:
-    st.header("Agent 3")
-
-
-with st.chat_message("ai"):
-    st.text("Hello!")
-    with st.status("Agent is using tool") as status:
-        time.sleep(1)
-        status.update(label="Agent is searching the web....")
-        time.sleep(2)
-        status.update(label="Agent is reading the page....")
-        time.sleep(3)
-        status.update(state="complete")
-
-with st.chat_message("human"):
-    st.text("Hi!")
-
-
-st.chat_input(
-    "Write a message for the assistant.",
-    accept_file=True,
-)
+    reset = st.button("Reset Memory")
+    if reset:
+        asyncio.run(session.clear_session())
+    st.write(asyncio.run(session.get_items()))
