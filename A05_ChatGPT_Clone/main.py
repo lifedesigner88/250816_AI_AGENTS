@@ -1,4 +1,4 @@
-import dotenv, asyncio
+import dotenv, asyncio, base64
 
 dotenv.load_dotenv()
 
@@ -21,7 +21,7 @@ if "agent" not in st.session_state:
             Use this tool when the users asks about current or future events,
             when you think you don't know the answer, try searching for it in the web first
             - File Search Tool: Use this tool when the user asks a question about facts related to themselves. 
-            or when thye ask questions about specific files.
+            or when they ask questions about specific files.
 
         """,
         tools=[
@@ -50,7 +50,13 @@ async def paint_histroy():
         if "role" in message:
             with st.chat_message(message["role"]):
                 if message["role"] == "user":
-                    st.write(message["content"])
+                    content = message["content"]
+                    if isinstance(content, str):
+                        st.write(content)
+                    elif isinstance(content, list):
+                        for part in content:
+                            if "image_url" in part:
+                                st.image(part["image_url"])
                 else:
                     if message["type"] == "message":
                         st.write(message["content"][0]["text"].replace("$", "\$"))
@@ -123,7 +129,7 @@ async def run_agent(message):
 prompt = st.chat_input(
     "Write a message for your assistant",
     accept_file=True,
-    file_type=["txt"]
+    file_type=["txt", "jpg", "jpeg", "gif", "png"],
 )
 
 if prompt:
@@ -141,6 +147,27 @@ if prompt:
                         file_id=uploaded_file.id,
                     )
                     status.update(label="✅ File uploaded", state="complete")
+        elif file.type.startswith("image/"):
+            with st.status("⌛ Uploading image ... ") as status:
+                file_bytes = file.getvalue()
+                base64_data = base64.b64encode(file_bytes).decode("utf-8")
+                data_url = f"data:{file.type};base64,{base64_data}"
+                asyncio.run(
+                    session.add_items(
+                        [{
+                            "role": "user",
+                            "content": [{
+                                "type": "input_image",
+                                "detail": "auto",
+                                "image_url": data_url,
+                            }]
+                        }]
+                    )
+                )
+                status.update(label="✅ Image uploaded", state="complete")
+            with st.chat_message("human"):
+                st.image(data_url)
+
     if prompt.text:
         with st.chat_message("human"):
             st.write(prompt.text)
