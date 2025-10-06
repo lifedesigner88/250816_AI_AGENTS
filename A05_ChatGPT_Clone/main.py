@@ -3,7 +3,8 @@ import dotenv, asyncio, base64
 dotenv.load_dotenv()
 
 import streamlit as st
-from agents import Agent, Runner, SQLiteSession, WebSearchTool, FileSearchTool, ImageGenerationTool
+from agents import (Agent, Runner, SQLiteSession, WebSearchTool, FileSearchTool, ImageGenerationTool,
+                    CodeInterpreterTool)
 
 from openai import OpenAI
 
@@ -38,6 +39,14 @@ if "agent" not in st.session_state:
                     "partial_images": 1,
                 }
             ),
+            CodeInterpreterTool(
+                tool_config={
+                    "type": "code_interpreter",
+                    "container": {
+                        "type": "auto",
+                    }
+                }
+            )
         ]
     )
 agent = st.session_state["agent"]
@@ -80,8 +89,12 @@ async def paint_histroy():
                 image = base64.b64decode(message["result"])
                 with st.chat_message("ai"):
                     st.image(image)
+            elif message_type == "code_interpreter_call":
+                with st.chat_message("ai"):
+                    st.code(message["code"])
 
 
+asyncio.run(paint_histroy())
 
 
 def update_status(status_container, event):
@@ -118,6 +131,22 @@ def update_status(status_container, event):
             "🎨 Drawing image...",
             "running",
         ),
+        "response.code_interpreter_call_code.done": (
+            "🤖 Ran code.",
+            "complete"
+        ),
+        "response.code_interpreter_call.completed": (
+            "🤖 Ran code.",
+            "complete"
+        ),
+        "response.code_interpreter_call.in_progress": (
+            "🤖 Running code...",
+            "complete",
+        ),
+        "response.code_interpreter_call.interpreting": (
+            "🤖 Running code...",
+            "complete",
+        ),
         "response.completed": (" ", "complete"),
     }
 
@@ -131,13 +160,21 @@ async def run_agent(message):
         status_container = st.status("⏳", expanded=False)
 
     with st.chat_message("ai"):
+        image_placeholder = st.empty()
+        code_placeholder = st.empty()
         text_placeholder = st.empty()
         stream = Runner.run_streamed(
             agent,
             message,
             session=session,
         )
+        code_response = ""
         response = ""
+
+        st.session_state["code_placeholder"] = code_placeholder
+        st.session_state["image_placeholder"] = image_placeholder
+        st.session_state["text_placeholder"] = text_placeholder
+
         async for event in stream.stream_events():
             if event.type == "raw_response_event":
                 update_status(status_container, event.data.type)
@@ -147,10 +184,12 @@ async def run_agent(message):
 
                 elif event.data.type == "response.image_generation_call.partial_image":
                     image = base64.b64decode(event.data.partial_image_b64)
-                    text_placeholder.image(image)
+                    image_placeholder.image(image)
 
-                elif event.data.type == "response.completed":
-                    text_placeholder.empty()
+                if event.data.type == "response.code_interpreter_call_code.delta":
+                    code_response += event.data.delta
+                    code_placeholder.code(code_response)
+
 
 
 prompt = st.chat_input(
@@ -160,6 +199,14 @@ prompt = st.chat_input(
 )
 
 if prompt:
+
+    if "code_placeholder" in st.session_state:
+        st.session_state["code_placeholder"].empty()
+    if "image_placeholder" in st.session_state:
+        st.session_state["image_placeholder"].empty()
+    if "text_placeholder" in st.session_state:
+        st.session_state["text_placeholder"].empty()
+
     for file in prompt.files:
         if file.type.startswith("text/"):
             with st.chat_message("ai"):
@@ -205,5 +252,3 @@ with st.sidebar:
     if reset:
         asyncio.run(session.clear_session())
     st.write(asyncio.run(session.get_items()))
-
-asyncio.run(paint_histroy())
