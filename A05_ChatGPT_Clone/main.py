@@ -163,12 +163,16 @@ async def run_agent(message):
         },
         cache_tools_list=True,
     )
-    async with yfinance_server:
-        tools = await yfinance_server.list_tools()
-        print("사용 가능한 도구:")
-        for i, tool in enumerate(tools, start=1):
-            print(f"{i}. {tool.name}")
-            print(f"   설명: {tool.description}")
+
+    timezone_server = MCPServerStdio(
+        params={
+            "command": "uvx",
+            "args": ["mcp-server-time", "--local-timezone=Asia/Seoul"],
+        }
+    )
+
+    async with yfinance_server, timezone_server:
+
         agent = Agent(
             name="Chat GPT Clone",
             instructions="""
@@ -217,6 +221,7 @@ async def run_agent(message):
             ],
             mcp_servers=[
                 yfinance_server,
+                timezone_server,
             ],
         )
 
