@@ -5,7 +5,7 @@ dotenv.load_dotenv()
 import asyncio
 
 import streamlit as st
-from agents import Runner, SQLiteSession, RunContextWrapper, InputGuardrailTripwireTriggered
+from agents import Runner, SQLiteSession, InputGuardrailTripwireTriggered, OutputGuardrailTripwireTriggered
 from models import UserAccountContext
 from my_agents.triage_agent import triage_agent
 
@@ -71,6 +71,10 @@ async def run_agent(user_message):
 
         except InputGuardrailTripwireTriggered:
             st.write("I can't help you with that.")
+
+        except OutputGuardrailTripwireTriggered:
+            st.write("Cant show you that answer.")
+            st.session_state["text_placeholder"].empty()
 
 
 message = st.chat_input(
