@@ -4,20 +4,4 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "firecrawl-py>=2.16.3",
-    "notebook>=7.4.5",
-    "openai>=1.99.9",
-]
-
-
-[tool.uv.workspace]
-members = [
-    "A01_News_Reader_Agent",
-    "A00_Understanding_AI",
-    "A02_Job_Hunter_Agent",
-    "A03_Content_Pipeline_Agent",
-    "A04_Grok_Deep_Research_Agent",
-    "A05_ChatGPT_Clone",
-    "A06_Customer_Support_Agent",
-]
+dependencies = []
