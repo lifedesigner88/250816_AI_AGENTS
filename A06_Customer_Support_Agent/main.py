@@ -15,15 +15,12 @@ user_account_ctx = UserAccountContext(
     tier="basic"
 )
 
-
-
 if "session" not in st.session_state:
     st.session_state["session"] = SQLiteSession(
         "chat-history",
         "customer-support-memory.db",
     )
 session = st.session_state["session"]
-
 
 
 async def paint_history():
@@ -42,7 +39,6 @@ asyncio.run(paint_history())
 
 
 async def run_agent(user_message):
-
     with st.chat_message("ai"):
         text_placeholder = st.empty()
         response = ""
@@ -59,7 +55,7 @@ async def run_agent(user_message):
                 if event.type == "raw_response_event":
                     if event.data.type == "response.output_text.delta":
                         response += event.data.delta
-                        text_placeholder.write(response.replace("$", "\$"))
+                        text_placeholder.write(response.replace("$", r"\$"))
 
         except InputGuardrailTripwireTriggered:
             st.write("I can't help you with that.")
@@ -78,7 +74,6 @@ if message:
         with st.chat_message("human"):
             st.write(message)
         asyncio.run(run_agent(message))
-
 
 with st.sidebar:
     reset = st.button("Reset memory")
