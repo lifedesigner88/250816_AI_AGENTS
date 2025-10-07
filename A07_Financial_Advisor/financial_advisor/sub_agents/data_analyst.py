@@ -93,7 +93,7 @@ def get_stock_price(ticker: str, period: str):
     }
 
 
-def get_financial_metrics(ticker: str) :
+def get_financial_metrics(ticker: str):
     """
     Retrieves key financial metrics and valuation ratios for stock analysis.
 
@@ -160,4 +160,5 @@ data_analyst = LlmAgent(
         get_stock_price,
         get_financial_metrics,
     ],
+    output_key="data_analyst_result",
 )
