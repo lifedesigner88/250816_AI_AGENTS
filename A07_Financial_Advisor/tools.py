@@ -1,44 +1,50 @@
-import os, re
+import dotenv
 
-from dotenv import load_dotenv
-from crewai.tools import tool
-from firecrawl import Firecrawl
+dotenv.load_dotenv()
+import re
+import os
+from firecrawl import FirecrawlApp, ScrapeOptions
 
-load_dotenv()
-firecrawl = Firecrawl(api_key=os.getenv("FIRECRAWL_API_KEY"))
 
-def clean_text(text: str) -> str:
-    # 링크, URL, 역슬래시, 개행, non-breaking space를 모두 " "로 치환
-    text = re.sub(r"\[[^\]]+\]\([^\)]+\)|https?://\S+|\\+|\n+|\xa0", " ", text)
-    # 2개 이상 공백 → 하나로 압축
-    text = re.sub(r"\s{2,}", " ", text)
-    return text.strip()
-
-@tool
 def web_search_tool(query: str):
     """
-    Web search tool,
+    Web Search Tool.
     Args:
-        query:str
+        query: str
             The query to search the web for.
-
-    Returns:
+    Returns
         A list of search results with the website content in Markdown format.
     """
-    cleaned_chunks = []
+    app = FirecrawlApp(api_key=os.getenv("FIRECRAWL_API_KEY"))
 
-    results = firecrawl.search(
+    response = app.search(
         query=query,
         limit=5,
-        scrape_options={"formats": ["markdown"]},
+        scrape_options=ScrapeOptions(
+            formats=["markdown"],
+        ),
     )
 
-    for result in results.web:
-        if hasattr(result, "markdown"):
-            cleaned_chunks.append({
-                "title": result.metadata.title,
-                "url": result.metadata.url,
-                "markdown": clean_text(result.markdown),
-            })
+    if not response.success:
+        return "Error using tool."
+
+    cleaned_chunks = []
+
+    for result in response.data:
+
+        title = result["title"]
+        url = result["url"]
+        markdown = result["markdown"]
+
+        cleaned = re.sub(r"\\+|\n+", "", markdown).strip()
+        cleaned = re.sub(r"\[[^\]]+\]\([^\)]+\)|https?://[^\s]+", "", cleaned)
+
+        cleaned_result = {
+            "title": title,
+            "url": url,
+            "markdown": cleaned,
+        }
+
+        cleaned_chunks.append(cleaned_result)
 
     return cleaned_chunks
