@@ -22,6 +22,8 @@ if "session" not in st.session_state:
     )
 session = st.session_state["session"]
 
+if "agent" not in st.session_state:
+    st.session_state["agent"] = triage_agent
 
 async def paint_history():
     session_messages = await session.get_items()
@@ -45,7 +47,7 @@ async def run_agent(user_message):
         st.session_state["text_placeholder"] = text_placeholder
         try:
             stream = Runner.run_streamed(
-                triage_agent,
+                st.session_state["agent"],
                 user_message,
                 session=session,
                 context=user_account_ctx,
@@ -56,6 +58,16 @@ async def run_agent(user_message):
                     if event.data.type == "response.output_text.delta":
                         response += event.data.delta
                         text_placeholder.write(response.replace("$", r"\$"))
+
+                elif event.type == "agent_updated_stream_event":
+                    if st.session_state["agent"].name != event.new_agent.name:
+                        st.session_state["agent"] = event.new_agent
+
+                        st.write(f"🤖 Transfered from {st.session_state["agent"].name} to {event.new_agent.name}")
+
+                        text_placeholder = st.empty() # 새로운 텍스트 홀더 생성
+                        st.session_state["text_placeholder"] = text_placeholder
+                        response = ""
 
         except InputGuardrailTripwireTriggered:
             st.write("I can't help you with that.")
