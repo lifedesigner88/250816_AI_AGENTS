@@ -5,7 +5,6 @@ from typing import List, Dict, Any
 
 client = OpenAI()
 
-
 async def generate_narrations(
         tool_context: ToolContext,
         voice: str,
