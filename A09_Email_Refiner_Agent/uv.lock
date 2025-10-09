@@ -33,7 +33,7 @@ dev = [
 requires-dist = [
     { name = "cloudpickle", specifier = ">=3.1.1" },
     { name = "google-adk", extras = ["eval"], specifier = ">=1.12.0" },
-    { name = "google-cloud-aiplatform", extras = ["adk", "agent-engines"], specifier = ">=1.120.0" },
+    { name = "google-cloud-aiplatform", extras = ["adk", "agent-engines"], specifier = "==1.111.0" },
     { name = "google-genai", specifier = ">=1.31.0" },
     { name = "ipykernel", specifier = ">=6.30.1" },
     { name = "litellm", specifier = ">=1.76.0" },
@@ -848,7 +848,7 @@ wheels = [
 
 [[package]]
 name = "google-cloud-aiplatform"
-version = "1.120.0"
+version = "1.111.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "docstring-parser" },
@@ -865,9 +865,9 @@ dependencies = [
     { name = "shapely" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1f/d0/baae0ba4bf0b2ad1c408562f8e0943c7aa43a3d7ff479a0aa1db11f03108/google_cloud_aiplatform-1.120.0.tar.gz", hash = "sha256:56d28ced011fe0935ddf42762da6758ad8beae057f470e7e87200ef50c4deaaa", size = 9674037, upload-time = "2025-10-08T18:02:31.841Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/db/def79d3cbf2b502864f8ab18d0094f437edc5c2e5db5994bd10a16e813d4/google_cloud_aiplatform-1.111.0.tar.gz", hash = "sha256:80b07186419970fb1e39e2728e7aa2402a8753c1041ec5117677f489202c91d4", size = 9604280, upload-time = "2025-08-27T02:57:57.243Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/81/fd/a2bf59444a59bf6a88c0f22921126616f22ae8f8acac780d701ccef78fd1/google_cloud_aiplatform-1.120.0-py2.py3-none-any.whl", hash = "sha256:cbceda8bdd642fc2181096c5cb035feb3586c579abe97ae8a6de9cb0a40ec72c", size = 8043461, upload-time = "2025-10-08T18:02:28.693Z" },
+    { url = "https://files.pythonhosted.org/packages/f9/27/492c171ccdaa56a409c9d50f4126170cfa779d0a976cb2d561f30d03146f/google_cloud_aiplatform-1.111.0-py2.py3-none-any.whl", hash = "sha256:a38796050b7d427fbf1f7d6d6e1d5069abe9a1fd948e3193250f68ccd67388f5", size = 7995239, upload-time = "2025-08-27T02:57:53.766Z" },
 ]
 
 [package.optional-dependencies]

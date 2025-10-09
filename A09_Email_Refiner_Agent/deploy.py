@@ -1,4 +1,5 @@
 import vertexai, dotenv, os
+
 dotenv.load_dotenv()
 
 from vertexai.preview import reasoning_engines
