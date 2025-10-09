@@ -11,11 +11,12 @@ dependencies = [
     "litellm>=1.76.0",
     "requests>=2.32.5",
     "sseclient-py>=0.0.27",
-
-#    for Jupiter
+    #    for Jupiter
     "notebook>=7.4.7",
     "pip>=25.2",
     "wheel>=0.45.1",
+    "google-cloud-aiplatform[adk,agent-engines]>=1.120.0",
+    "cloudpickle>=3.1.1",
 ]
 
 [dependency-groups]
