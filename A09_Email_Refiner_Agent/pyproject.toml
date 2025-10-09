@@ -7,7 +7,10 @@ requires-python = ">=3.13"
 dependencies = [
     "google-adk[eval]>=1.12.0",
     "google-genai>=1.31.0",
+    "ipykernel>=6.30.1",
     "litellm>=1.76.0",
+    "notebook>=7.4.7",
+    "requests>=2.32.5",
 ]
 
 [dependency-groups]
