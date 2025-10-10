@@ -10,7 +10,11 @@ dependencies = [
     "langgraph==0.6.6",
     "langgraph-checkpoint-sqlite==2.0.11",
     "langgraph-cli[inmem]==0.4.0",
+    "pip>=25.2",
     "python-dotenv==1.1.1",
+    "notebook>=7.4.7",
+    "wheel>=0.45.1",
+
 ]
 
 [dependency-groups]
