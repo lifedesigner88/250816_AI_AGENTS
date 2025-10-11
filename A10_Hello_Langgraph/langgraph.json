@@ -1,0 +1,10 @@
+{
+  "dependencies": [
+    "langchain_openai",
+    "./poem_agent.py"
+  ],
+  "env": "../.env",
+  "graphs": {
+    "mr_poet": "./poem_agent.py:graph"
+  }
+}
