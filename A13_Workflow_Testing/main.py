@@ -11,7 +11,6 @@ checkpointer = MemorySaver()
 
 
 class EmailState(TypedDict):
-
     email: str
     category: Literal["spam", "normal", "urgent"]
     priority_score: int
@@ -19,14 +18,12 @@ class EmailState(TypedDict):
 
 
 class EmailClassificationOuput(BaseModel):
-
     category: Literal["spam", "normal", "urgent"] = Field(
         description="Category of the email",
     )
 
 
 class PriorityScoreOutput(BaseModel):
-
     priority_score: int = Field(
         description="Priority score from 1 to 10",
         ge=1,
@@ -35,7 +32,6 @@ class PriorityScoreOutput(BaseModel):
 
 
 def categorize_email(state: EmailState):
-
     s_llm = llm.with_structured_output(EmailClassificationOuput)
 
     result = s_llm.invoke(
@@ -91,7 +87,6 @@ def draft_response(state: EmailState) -> EmailState:
 
 
 graph_builder = StateGraph(EmailState)
-
 
 graph_builder.add_node("categorize_email", categorize_email)
 graph_builder.add_node("assing_priority", assing_priority)
