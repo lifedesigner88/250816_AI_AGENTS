@@ -61,9 +61,8 @@ graph_builder.add_edge("categorize_email", "assing_priority")
 graph_builder.add_edge("assing_priority", "draft_response")
 graph_builder.add_edge("draft_response", END)
 
-graph = graph_builder.compile()
 
+checkpointer = MemorySaver()
 
-result = graph.invoke({"email": "i have an offer for you!"})
+graph = graph_builder.compile(checkpointer=checkpointer)
 
-print(result)
