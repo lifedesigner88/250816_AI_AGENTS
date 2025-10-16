@@ -1,9 +1,9 @@
 {
     "dependencies": [
-        "./supervisor_tool.py"
+        "./prebuilt.py"
     ],
     "graphs": {
-        "agent": "./supervisor_tool.py:graph"
+        "agent": "./prebuilt.py:supervisor"
     },
     "env": "../.env"
 }
