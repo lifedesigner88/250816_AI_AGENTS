@@ -1,6 +1,21 @@
-def main():
-    print("Hello from a15-tutor-agent!")
+from langgraph.graph import START, END, StateGraph, MessagesState
+from agents.classification_agent import classification_agent
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
-if __name__ == "__main__":
-    main()
+class TutorState(MessagesState):
+    pass
+
+
+graph_builder = StateGraph(TutorState)
+
+(
+    graph_builder
+    .add_node("classification_agent", classification_agent)
+    .add_edge(START, "classification_agent")
+    .add_edge("classification_agent", END)
+)
+
+graph = graph_builder.compile()
