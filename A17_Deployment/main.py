@@ -1,4 +1,3 @@
-from typing import Any, Coroutine
 
 from dotenv import load_dotenv
 from fastapi import FastAPI
@@ -17,7 +16,6 @@ agent = Agent(name="Assistant", instructions="You help users with their question
 app = FastAPI()
 
 client = AsyncOpenAI()
-
 
 class CreateConversationResponse(BaseModel):
     conversation_id: str
@@ -66,9 +64,6 @@ async def create_message_stream(
                 yield event.data.delta
 
     return StreamingResponse(event_generator(), media_type="text/plain")
-
-
-
 
 @app.post("/conversations/{conversation_id}/message-stream-all")
 async def create_message_stream_all(
